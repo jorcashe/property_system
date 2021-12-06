@@ -1,0 +1,70 @@
+body {font-family: Arial, Helvetica, sans-serif;background: #F2F3F4;}
+
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+      font-size: 12px;   margin: 45px;   width: 480px; text-align: left;    border-collapse: separate; }
+
+
+/*th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border: 1px solid black; border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    border: 1px solid black; color: #669;    border-top: 4px solid transparent; } 
+
+tr:hover td { background: #83f67d; color: #339; border: 1px solid black;}*/
+
+/*ESTILOS GENERALES*/
+nav ul {
+	list-style:none;
+	padding: 0;
+}
+
+nav li {
+	line-height: 3rem;
+	position: relative;
+}
+nav li ul {
+	position: absolute;
+}
+nav a {
+	color: #ddd;
+	display: block;
+	padding: 0 2.5em;
+	text-decoration: none;
+	transition: .4s;
+}
+
+nav a:hover {
+	background: rgba(0,0,0,.5);
+}
+
+nav li ul {
+	display: none;
+}
+
+nav li:hover ul {
+	display: block;
+}
+
+/*PRIMER NIVEL*/
+nav > ul {
+	background: #333;
+	display: table;
+	width: 100%;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+/*SEGUNDO NIVEL*/
+
+nav li li{
+	background: #222;
+	width: 200px;
+}
+
+nav > ul > li > ul {
+	top: 100%;
+}
+
+/*TERCER NIVEL*/
